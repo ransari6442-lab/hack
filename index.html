@@ -1,256 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium APK Download</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Loss Recovery AI Tool</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#070b17;
-color:#fff;
+background:#050816;
+color:white;
+overflow-x:hidden;
 }
 
+
+/* HERO */
+
 .hero{
-padding:40px 20px;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-background:linear-gradient(135deg,#6a11cb,#2575fc);
+padding:30px;
+
+background:
+linear-gradient(135deg,#7b2cff,#00e5ff);
 }
+
+
+.box{
+max-width:900px;
+}
+
 
 .badge{
 display:inline-block;
-background:#00ffb3;
+background:#00ff99;
 color:#000;
-padding:8px 18px;
-border-radius:30px;
-font-weight:600;
+padding:10px 20px;
+border-radius:50px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+
+h1{
+font-size:45px;
 margin-bottom:15px;
 }
 
-.hero h1{
-font-size:36px;
-margin-bottom:10px;
-}
 
-.hero p{
-opacity:.9;
-max-width:700px;
-margin:auto;
-}
-
-.download-btn{
-display:inline-block;
-margin-top:25px;
-background:#00ffb3;
-color:#000;
-padding:15px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:700;
+p{
+color:#ddd;
 font-size:18px;
-transition:.3s;
 }
 
-.download-btn:hover{
-transform:translateY(-3px);
+
+.btn{
+
+display:inline-block;
+margin-top:30px;
+padding:18px 45px;
+
+background:#00ff99;
+color:#000;
+
+border-radius:50px;
+
+font-size:22px;
+font-weight:bold;
+
+text-decoration:none;
+
+box-shadow:
+0 0 25px #00ff99;
+
+animation:pulse 1.5s infinite;
+
 }
 
-.container{
-width:95%;
-max-width:1100px;
-margin:auto;
+
+@keyframes pulse{
+
+50%{
+transform:scale(1.08);
 }
+
+}
+
+
+
+/* SECTIONS */
+
 
 .section{
-padding:50px 0;
+
+padding:60px 20px;
+
+max-width:1100px;
+margin:auto;
+
 }
+
 
 .title{
+
 text-align:center;
-font-size:28px;
+font-size:35px;
 margin-bottom:30px;
+
+color:#00ffcc;
+
 }
 
-.gallery{
+
+
+/* IMAGES */
+
+
+.images{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
+
 }
 
-.gallery img{
+
+.images img{
+
 width:100%;
-border-radius:20px;
-border:2px solid #222;
+border-radius:25px;
+
+box-shadow:
+0 0 30px #111;
+
 }
 
-.video-box{
-max-width:850px;
-margin:auto;
-}
 
-.video-box video{
+
+/* VIDEO */
+
+
+video{
+
 width:100%;
-border-radius:20px;
+border-radius:25px;
+
 }
 
-.features{
+
+
+/* CARDS */
+
+
+.cards{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
 gap:20px;
+
 }
+
 
 .card{
-background:#10182b;
+
+background:#10182f;
+
 padding:25px;
-border-radius:20px;
-border:1px solid #1f2c4f;
-}
 
-.card h3{
-margin-bottom:10px;
-color:#00ffb3;
-}
+border-radius:25px;
 
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
+border:1px solid #222;
 
-.review{
-background:#10182b;
-padding:20px;
-border-radius:15px;
-}
-
-.footer{
 text-align:center;
+
+}
+
+
+.card h2{
+
+color:#00ff99;
+margin-bottom:10px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
 padding:30px;
-background:#0d1323;
-margin-top:40px;
+text-align:center;
+background:#02040b;
+
 }
 
-.footer a{
-color:#00ffb3;
+
+.download{
+
+position:fixed;
+bottom:15px;
+left:15px;
+right:15px;
+
+background:#00ff99;
+
+color:#000;
+
+text-align:center;
+
+padding:15px;
+
+border-radius:50px;
+
+font-weight:bold;
+
 text-decoration:none;
+
+box-shadow:0 0 20px #00ff99;
+
 }
 
-@media(max-width:600px){
-.hero h1{
-font-size:28px;
-}
-}
+
 </style>
+
 </head>
+
+
 <body>
 
-<section class="hero">
-<div class="badge">🔥 LIMITED TIME OFFER</div>
 
-<h1>Premium APK Download</h1>
+
+<section class="hero">
+
+<div class="box">
+
+
+<div class="badge">
+🔥 PREMIUM APK
+</div>
+
+
+<h1>
+Loss Recovery AI Tool
+</h1>
+
 
 <p>
-Fast, Secure & Easy Download Experience.
-Install the latest version instantly.
+Download latest version instantly.
+Fast & easy installation.
 </p>
 
-<a href="your-apk-link.apk" class="download-btn">
-⬇ Download APK
+
+
+<a class="btn"
+href="./Loss%20Recovery%20Ai%20Tool%20V2.apk"
+download>
+
+⬇ DOWNLOAD APK
+
 </a>
-</section>
 
-<div class="container">
-
-<section class="section">
-<h2 class="title">📸 App Screenshots</h2>
-
-<div class="gallery">
-
-<img src="screenshot1.jpg" alt="Screenshot 1">
-
-<img src="screenshot2.jpg" alt="Screenshot 2">
 
 </div>
+
 </section>
 
-<section class="section">
-<h2 class="title">🎥 Watch Demo</h2>
 
-<div class="video-box">
-<video controls poster="thumbnail.jpg">
-<source src="promo-video.mp4" type="video/mp4">
+
+
+
+<div class="section">
+
+
+<h2 class="title">
+📸 Screenshots
+</h2>
+
+
+<div class="images">
+
+
+<img src="pic1.jpg">
+
+<img src="pic2.jpg">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2 class="title">
+🎬 Video Demo
+</h2>
+
+
+<video controls>
+
+<source src="video.mp4" type="video/mp4">
+
 </video>
+
+
 </div>
-</section>
 
-<section class="section">
-<h2 class="title">⚡ Features</h2>
 
-<div class="features">
+
+
+
+<div class="section">
+
+
+<h2 class="title">
+⚡ Features
+</h2>
+
+
+<div class="cards">
+
 
 <div class="card">
-<h3>Fast Download</h3>
-<p>Lightning-fast APK delivery.</p>
+
+<h2>Fast</h2>
+
+<p>
+Quick download and setup
+</p>
+
 </div>
+
+
 
 <div class="card">
-<h3>Secure</h3>
-<p>Protected installation process.</p>
+
+<h2>Secure</h2>
+
+<p>
+Clean installation process
+</p>
+
 </div>
+
+
+
 
 <div class="card">
-<h3>Latest Version</h3>
-<p>Always updated APK files.</p>
+
+<h2>Updated</h2>
+
+<p>
+Latest APK version
+</p>
+
 </div>
+
+
+
 
 <div class="card">
-<h3>Easy Install</h3>
-<p>One-click download and install.</p>
-</div>
 
-</div>
-</section>
+<h2>Easy</h2>
 
-<section class="section">
-<h2 class="title">⭐ User Reviews</h2>
-
-<div class="testimonials">
-
-<div class="review">
-★★★★★
-<br><br>
-Very smooth experience and easy setup.
-</div>
-
-<div class="review">
-★★★★★
-<br><br>
-Clean design and fast download speed.
-</div>
-
-<div class="review">
-★★★★★
-<br><br>
-Works perfectly on Android devices.
-</div>
-
-</div>
-</section>
+<p>
+One click download
+</p>
 
 </div>
 
-<footer class="footer">
-© 2025 Premium APK Landing Page
+
+</div>
+
+
+</div>
+
+
+
+<a class="download"
+href="./Loss%20Recovery%20Ai%20Tool%20V2.apk"
+download>
+
+⬇ Download APK Now
+
+</a>
+
+
+
+<footer>
+
+© 2025 Loss Recovery AI Tool
+
 </footer>
+
+
 
 </body>
 </html>
