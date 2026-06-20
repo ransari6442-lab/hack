@@ -1,239 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Loss Recovery AI Tool</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial;
 background:#050816;
 color:white;
-overflow-x:hidden;
+text-align:center;
 }
 
-
-/* HERO */
 
 .hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:30px;
 
-background:
-linear-gradient(135deg,#7b2cff,#00e5ff);
-}
+padding:80px 20px;
+background:linear-gradient(135deg,#7200ff,#00d9ff);
 
-
-.box{
-max-width:900px;
-}
-
-
-.badge{
-display:inline-block;
-background:#00ff99;
-color:#000;
-padding:10px 20px;
-border-radius:50px;
-font-weight:bold;
-margin-bottom:20px;
 }
 
 
 h1{
 font-size:45px;
-margin-bottom:15px;
 }
 
 
 p{
-color:#ddd;
-font-size:18px;
+font-size:20px;
 }
+
 
 
 .btn{
 
 display:inline-block;
-margin-top:30px;
-padding:18px 45px;
+
+margin-top:25px;
 
 background:#00ff99;
-color:#000;
+
+color:black;
+
+padding:18px 40px;
 
 border-radius:50px;
 
 font-size:22px;
+
 font-weight:bold;
 
 text-decoration:none;
 
-box-shadow:
-0 0 25px #00ff99;
-
-animation:pulse 1.5s infinite;
-
 }
 
-
-@keyframes pulse{
-
-50%{
-transform:scale(1.08);
-}
-
-}
-
-
-
-/* SECTIONS */
 
 
 .section{
 
-padding:60px 20px;
-
-max-width:1100px;
-margin:auto;
-
-}
-
-
-.title{
-
-text-align:center;
-font-size:35px;
-margin-bottom:30px;
-
-color:#00ffcc;
+padding:50px 20px;
 
 }
 
 
 
-/* IMAGES */
+img,video{
 
+width:90%;
 
-.images{
+max-width:500px;
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+border-radius:20px;
 
-}
-
-
-.images img{
-
-width:100%;
-border-radius:25px;
-
-box-shadow:
-0 0 30px #111;
+margin:10px;
 
 }
 
-
-
-/* VIDEO */
-
-
-video{
-
-width:100%;
-border-radius:25px;
-
-}
-
-
-
-/* CARDS */
-
-
-.cards{
-
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-
-gap:20px;
-
-}
 
 
 .card{
 
-background:#10182f;
+background:#10172e;
+
+margin:15px;
 
 padding:25px;
 
-border-radius:25px;
-
-border:1px solid #222;
-
-text-align:center;
+border-radius:20px;
 
 }
 
-
-.card h2{
-
-color:#00ff99;
-margin-bottom:10px;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-padding:30px;
-text-align:center;
-background:#02040b;
-
-}
 
 
 .download{
 
 position:fixed;
+
 bottom:15px;
+
 left:15px;
+
 right:15px;
 
 background:#00ff99;
 
 color:#000;
 
-text-align:center;
-
 padding:15px;
 
 border-radius:50px;
 
-font-weight:bold;
-
 text-decoration:none;
 
-box-shadow:0 0 20px #00ff99;
+font-weight:bold;
 
 }
+
 
 
 </style>
@@ -244,15 +131,7 @@ box-shadow:0 0 20px #00ff99;
 <body>
 
 
-
-<section class="hero">
-
-<div class="box">
-
-
-<div class="badge">
-🔥 PREMIUM APK
-</div>
+<div class="hero">
 
 
 <h1>
@@ -261,38 +140,25 @@ Loss Recovery AI Tool
 
 
 <p>
-Download latest version instantly.
-Fast & easy installation.
+Download Latest APK
 </p>
 
 
+<a class="btn" href="app.apk" download>
 
-<a class="btn"
-href="./Loss%20Recovery%20Ai%20Tool%20V2.apk"
-download>
-
-⬇ DOWNLOAD APK
+⬇ Download APK
 
 </a>
 
 
 </div>
 
-</section>
-
-
-
 
 
 <div class="section">
 
 
-<h2 class="title">
-📸 Screenshots
-</h2>
-
-
-<div class="images">
+<h2>📸 Screenshots</h2>
 
 
 <img src="pic1.jpg">
@@ -303,23 +169,17 @@ download>
 </div>
 
 
-</div>
-
-
-
 
 
 <div class="section">
 
 
-<h2 class="title">
-🎬 Video Demo
-</h2>
+<h2>🎬 Video</h2>
 
 
 <video controls>
 
-<source src="video.mp4" type="video/mp4">
+<source src="video.mp4">
 
 </video>
 
@@ -333,72 +193,32 @@ download>
 <div class="section">
 
 
-<h2 class="title">
-⚡ Features
-</h2>
-
-
-<div class="cards">
+<h2>⚡ Features</h2>
 
 
 <div class="card">
-
-<h2>Fast</h2>
-
-<p>
-Quick download and setup
-</p>
-
+Fast Download
 </div>
-
 
 
 <div class="card">
-
-<h2>Secure</h2>
-
-<p>
-Clean installation process
-</p>
-
+Easy Install
 </div>
-
-
 
 
 <div class="card">
-
-<h2>Updated</h2>
-
-<p>
-Latest APK version
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h2>Easy</h2>
-
-<p>
-One click download
-</p>
-
+Latest Version
 </div>
 
 
 </div>
 
 
-</div>
 
 
 
 <a class="download"
-href="./Loss%20Recovery%20Ai%20Tool%20V2.apk"
+href="app.apk"
 download>
 
 ⬇ Download APK Now
@@ -407,13 +227,6 @@ download>
 
 
 
-<footer>
-
-© 2025 Loss Recovery AI Tool
-
-</footer>
-
-
-
 </body>
+
 </html>
